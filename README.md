@@ -1,80 +1,90 @@
-📊 Tax Calculator – Java (Maven)
+# 📊 Tax Calculator – Java (Maven)
 
-This is a production-grade tax calculator that computes an individual's total tax based on income and defined tax slabs. The application follows object-oriented design principles, includes unit tests, and is structured for readability and maintainability.
+A simple, production-ready Java application that calculates income tax based on defined slabs using Object-Oriented Principles and clean code practices. Built with Maven and includes unit tests using JUnit 5.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-🚀 Features:
+## 🚀 Features:
 
-Income-based tax calculation using defined slabs
+- Calculates income tax for individuals based on Indian tax slabs
+- Clean separation of concerns using models, services, and controllers
+- Robust input validation with meaningful error messages
+- Unit tests written using JUnit 5
+- Fully Maven-managed build and dependency lifecycle
 
-Input validation (whole numbers only, no decimals, no negatives)
+---
 
-Modular design (Controller, Service, Model, Utility layers)
+## 💰 Tax Slabs Used:
 
-Unit tests with JUnit 5
+| Income Range             | Tax Rate |
+|--------------------------|----------|
+| ₹0 – ₹3,50,000           | 0%       |
+| ₹3,50,001 – ₹6,25,000    | 9%       |
+| ₹6,25,001 – ₹12,00,000   | 18%      |
+| ₹12,00,001 and above     | 35%      |
 
-Optional code coverage reporting via JaCoCo
+---
 
-Built with Maven
+## 🛠 Tech Stack & Requirements
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+### 🧪 Language & Build System
+- **Java**: 1.8+
+- **Maven**: Project management and build automation
+- **JUnit 5**: Unit testing
 
-📌 Tax Slabs Used:
+---
 
-Income Range (₹)	Tax Rate
-0 – 3,50,000	0%
-3,50,001 – 6,25,000	9%
-6,25,001 – 12,00,000	18%
-12,00,001 and above	35%
-
-🧾 Example:
-
-Input: 25,00,000
-
-Breakdown:
-0% on ₹3,50,000
-9% on ₹2,75,000
-18% on ₹5,75,000
-35% on ₹13,00,000
-
-Output: ₹7,12,750.00
-
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
-💻 How to Run:
+## 💻 How to Run:
 
 Run from terminal (uses Maven Exec Plugin):
 
+```bash
 mvn clean compile exec:java
 
 Or run the Main class directly from your IDE.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-✅ How to Test
+## ✅ How to Test
 
 Run all tests with:
+
+```bash
 mvn clean test
 
 Generate test report:
+
+```bash
 mvn surefire-report:report
 
 Generate coverage report:
+
+```bash
 mvn jacoco:report
 
 Open in browser:
+
+```bash
 open target/site/jacoco/index.html      # macOS
+```bash
 start target/site/jacoco/index.html     # Windows
+```bash
 open target/site/surefire-report.html   # macOS
+```bash
 start target/site/surefire-report.html  # Windows
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-🧪 Sample Unit Test Locations:
+### 🧪 Sample Unit Test Locations:
 
 TaxServiceImplTest.java: Tests various income cases
 InputValidatorTest.java: Validates input parsing & exceptions
 
+---
 
+## 📄 License
+This project is for evaluation/demo purposes only. All rights reserved by the author.
 
+yaml
+Copy
+Edit
