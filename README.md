@@ -40,7 +40,7 @@ Run from terminal (uses Maven Exec Plugin):
 
 ```bash
 mvn clean compile exec:java
-
+```
 Or run the Main class directly from your IDE.
 
 ---
@@ -48,34 +48,27 @@ Or run the Main class directly from your IDE.
 ## ✅ How to Test
 
 Run all tests with:
-
 ```bash
 mvn clean test
-
+```
 Generate test report:
-
 ```bash
 mvn surefire-report:report
-
+```
 Generate coverage report:
-
 ```bash
 mvn jacoco:report
-
+```
 Open in browser:
-
 ```bash
 open target/site/jacoco/index.html      # macOS
-```bash
 start target/site/jacoco/index.html     # Windows
-```bash
 open target/site/surefire-report.html   # macOS
-```bash
 start target/site/surefire-report.html  # Windows
-
+```
 ---
 
-### 🧪 Sample Unit Test Locations:
+## 🧪 Sample Unit Test Locations:
 
 TaxServiceImplTest.java: Tests various income cases
 InputValidatorTest.java: Validates input parsing & exceptions
@@ -84,7 +77,3 @@ InputValidatorTest.java: Validates input parsing & exceptions
 
 ## 📄 License
 This project is for evaluation/demo purposes only. All rights reserved by the author.
-
-yaml
-Copy
-Edit
