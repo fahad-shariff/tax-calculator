@@ -28,7 +28,7 @@ A simple, production-ready Java application that calculates income tax based on 
 ## 🛠 Tech Stack & Requirements
 
 ### 🧪 Language & Build System
-- **Java**: 1.8+
+- **Java**: 1.8 (Oracle JDK / OpenJDK)
 - **Maven**: Project management and build automation
 - **JUnit 5**: Unit testing
 
